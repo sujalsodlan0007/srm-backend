@@ -1,9 +1,3 @@
-require('dotenv').config();
+// Main entry point for cPanel / LiteSpeed / Node hosting environments
+require('./dist/server.js');
 
-const app = require('./src/app');
-
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
